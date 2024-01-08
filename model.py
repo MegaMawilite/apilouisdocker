@@ -20,7 +20,7 @@ class IrisModel:
     #    saves the model
     def __init__(self):
         self.df = pd.read_csv('iris.csv')
-        self.model_fname_ = 'iris_model.jablib'
+        self.model_fname_ = 'iris_model.joblib'
         try:
             self.model = joblib.load(self.model_fname_)
         except Exception as _:
